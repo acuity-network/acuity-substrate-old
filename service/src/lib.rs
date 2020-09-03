@@ -62,18 +62,11 @@ native_executor_instance!(
 pub trait IdentifyVariant {
 	/// Returns if this is a configuration for the `Acuity` network.
 	fn is_acuity(&self) -> bool;
-
-	/// Returns if this is a configuration for the `Westend` network.
-	fn is_westend(&self) -> bool;
 }
 
 impl IdentifyVariant for Box<dyn ChainSpec> {
 	fn is_acuity(&self) -> bool {
-		self.id().starts_with("acuity") || self.id().starts_with("ksm")
-	}
-
-	fn is_westend(&self) -> bool {
-		self.id().starts_with("westend") || self.id().starts_with("wnd")
+		self.id().starts_with("acuity") || self.id().starts_with("acu")
 	}
 }
 
