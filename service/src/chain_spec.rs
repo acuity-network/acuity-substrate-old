@@ -19,7 +19,7 @@
 use sp_core::{Pair, Public, crypto::UncheckedInto, sr25519};
 use polkadot_primitives::v0::{AccountId, AccountPublic, ValidatorId};
 use acuity_runtime as acuity;
-use acuity::constants::currency::DOTS as ACU;
+use acuity::constants::currency::ACU;
 use sc_chain_spec::{ChainSpecExtension, ChainType};
 use sp_runtime::{traits::IdentifyAccount, Perbill};
 use serde::{Serialize, Deserialize};
