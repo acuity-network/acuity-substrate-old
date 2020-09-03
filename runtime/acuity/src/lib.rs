@@ -202,7 +202,7 @@ impl pallet_indices::Trait for Runtime {
 }
 
 parameter_types! {
-	pub const ExistentialDeposit: Balance = 1 * CENTS;
+	pub const ExistentialDeposit: Balance = 100 * MILLICENTS;
 }
 
 /// Splits fees 80/20 between treasury and block author.
