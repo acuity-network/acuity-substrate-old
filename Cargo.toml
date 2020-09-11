@@ -4,9 +4,12 @@ path = "src/main.rs"
 
 [package]
 name = "acuity"
+description = "Implementation of a https://acuity.social node in Rust based on the Substrate framework."
+license = "GPL-3.0-only"
 version = "0.8.23"
 authors = ["Parity Technologies <admin@parity.io>"]
 edition = "2018"
+readme = "README.md"
 
 [dependencies]
 cli = { package = "cli", path = "cli" }
@@ -39,6 +42,7 @@ members = [
 	"node/core/av-store",
 	"node/core/backing",
 	"node/core/bitfield-signing",
+	"node/core/candidate-selection",
 	"node/core/candidate-validation",
 	"node/core/chain-api",
 	"node/core/proposer",
@@ -50,6 +54,7 @@ members = [
 	"node/network/statement-distribution",
 	"node/network/bitfield-distribution",
 	"node/network/availability-distribution",
+	"node/network/collator-protocol",
 	"node/overseer",
 	"node/primitives",
 	"node/subsystem",
