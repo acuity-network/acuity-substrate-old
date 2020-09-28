@@ -1,6 +1,8 @@
-# Polkadot
+# Acuity Social
 
-Implementation of a https://acuity.social node in Rust based on the Substrate framework.
+Soon to be deprecated implementation of a https://acuity.social node in Rust based on the Substrate framework.
+
+This repo will be replaced by: https://github.com/acuity-social/acuity-substrate
 
 
 This repo contains runtimes for the Acuity network. The README provides
@@ -53,7 +55,7 @@ cargo build --release
 Connect to the global Acuity network by running:
 
 ```bash
-./target/release/polkadot --chain=kusama
+./target/release/acuity
 ```
 
 ## License
